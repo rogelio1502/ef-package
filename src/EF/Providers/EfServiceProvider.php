@@ -1,6 +1,6 @@
 <?php
 
-namespace EF;
+namespace EF\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
