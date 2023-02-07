@@ -28,11 +28,11 @@ class EfServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../resources/views' => base_path('resources/views/vendor/rogelio1502/ef-package'),
+                __DIR__ . '/../../resources/views' => base_path('resources/views/vendor/rogelio1502/ef-package'),
             ], 'views');
         }
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ef');
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'ef');
     }
     
 }
