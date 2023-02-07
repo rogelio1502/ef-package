@@ -1,6 +1,6 @@
 <?php
 
-namespace EF\Components;
+namespace EF;
 use Orchid\Screen\Field;
 use Orchid\Screen\Concerns\ComplexFieldConcern;
 

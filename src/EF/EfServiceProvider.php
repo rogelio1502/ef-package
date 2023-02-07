@@ -1,6 +1,6 @@
 <?php
 
-namespace Components;
+namespace EF;
 
 use Illuminate\Support\ServiceProvider;
 use Orchid\Platform\Dashboard;
