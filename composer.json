@@ -3,7 +3,7 @@
   "description": "Lorem",
   "type": "library",
   "require": {
-    "php": ">=9.0.0"
+    "php": ">=5.5.0"
   },
   "license": "proprietary",
   "authors": [
