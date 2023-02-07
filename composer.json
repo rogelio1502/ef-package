@@ -17,7 +17,8 @@
   "autoload": {
     "psr-4": {
       "RandomPassword\\": "src/RandomPassword/",
-      "Components\\": "src/Components/"
+      "Components\\": "src/Components/",
+      "Providers\\": "src/Providers/"
     }
   },
   "extra": {
