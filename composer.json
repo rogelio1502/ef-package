@@ -24,7 +24,7 @@
     "laravel": {
       "providers": [
         "RandomPassword\\PasswordServiceProvider",
-        "Componentes\\Providers\\EfServiceProvider"
+        "Providers\\EfServiceProvider"
       ]
     }
   }
