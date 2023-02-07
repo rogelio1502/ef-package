@@ -32,6 +32,9 @@ class EfServiceProvider extends ServiceProvider
             ], 'views');
         }
 
+        $ds->registerResource('scripts','/js/app.js');
+        $ds->registerResource('stylesheets','/css/tom-select.default.css');
+
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'ef');
     }
     
