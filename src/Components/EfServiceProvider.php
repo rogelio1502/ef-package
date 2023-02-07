@@ -19,4 +19,9 @@ class EfServiceProvider extends ServiceProvider
         $ds->registerResource('scripts','/js/app.js');
         $ds->registerResource('stylesheets','/css/tom-select.default.css');
     }
+
+    public function register()
+    {
+        $this->app->singleton('liveSelect', LiveSelect::class);
+    } 
 }
