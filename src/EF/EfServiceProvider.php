@@ -32,7 +32,7 @@ class EfServiceProvider extends ServiceProvider
             ], 'views');
         }
 
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'rogelio1502/ef-package');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'ef');
     }
     
 }

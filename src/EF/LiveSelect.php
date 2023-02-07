@@ -7,6 +7,7 @@ use Orchid\Screen\Concerns\ComplexFieldConcern;
 class LiveSelect extends Field
 {
 
+    
     protected $attributes = [
         'class'        => 'form-control',
         'allowEmpty'   => '',
@@ -49,13 +50,13 @@ class LiveSelect extends Field
 
         $this->set('id', $id);
 
-        // return view('live_select',array_merge($this->getAttributes(), [
-        //     'attributes'     => $this->getAllowAttributes(),
-        //     'id'             => $id,
-        //     'oldName'        => $this->getOldName(),
-        //     'typeForm'       => $this->typeForm ?? $this->vertical()->typeForm,
-        // ]));
-        return "<h1>Demo</h1>";
+        return view('ef::live_select',array_merge($this->getAttributes(), [
+            'attributes'     => $this->getAllowAttributes(),
+            'id'             => $id,
+            'oldName'        => $this->getOldName(),
+            'typeForm'       => $this->typeForm ?? $this->vertical()->typeForm,
+        ]));
+
     }
 
 }
