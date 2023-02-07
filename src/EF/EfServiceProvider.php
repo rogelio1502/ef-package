@@ -22,6 +22,6 @@ class EfServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->singleton('liveSelect', LiveSelect::class);
+        $this->app->singleton('EF/Components', LiveSelect::class);
     } 
 }
