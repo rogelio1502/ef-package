@@ -3,7 +3,8 @@
   "description": "Lorem",
   "type": "library",
   "require": {
-    "php": ">=5.5.0"
+    "php": ">=5.5.0",
+    "orchid/platform": "^13.9"
   },
   "license": "proprietary",
   "authors": [
@@ -15,13 +16,15 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "RandomPassword\\": "src/RandomPassword/"
+      "RandomPassword\\": "src/RandomPassword/",
+      "Componentes\\": "src/Componentes/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "RandomPassword\\PasswordServiceProvider"
+        "RandomPassword\\PasswordServiceProvider",
+        "Componentes\\Providers\\EfServiceProvider"
       ]
     }
   }
