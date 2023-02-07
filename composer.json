@@ -1,0 +1,28 @@
+{
+  "name": "rogelio1502/ef-package",
+  "description": "Lorem",
+  "type": "library",
+  "require": {
+    "php": ">=9.0.0"
+  },
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Rogelio Torres Pasillas",
+      "email": "rogelio1502@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "RandomPassword\\": "src/RandomPassword/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RandomPassword\\PasswordServiceProvider"
+      ]
+    }
+  }
+}
