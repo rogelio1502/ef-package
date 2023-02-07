@@ -16,14 +16,13 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "EF\\": "src/EF/Components/",
-      "Providers\\": "src/EF/Providers/"
+      "EF\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Providers\\EfServiceProvider"
+        "EF\\Providers\\EfServiceProvider"
       ]
     }
   }
