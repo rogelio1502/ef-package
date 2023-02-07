@@ -17,15 +17,14 @@
   "autoload": {
     "psr-4": {
       "RandomPassword\\": "src/RandomPassword/",
-      "Components\\": "src/Components/",
-      "Providers\\": "src/Providers/"
+      "Components\\": "src/Components/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
         "RandomPassword\\PasswordServiceProvider",
-        "Providers\\EfServiceProvider"
+        "Components\\EfServiceProvider"
       ]
     }
   }
