@@ -22,7 +22,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "EF\\Providers\\EfServiceProvider"
+        "EF\\EfServiceProvider"
       ]
     }
   }

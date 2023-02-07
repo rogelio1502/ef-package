@@ -1,6 +1,6 @@
 <?php
 
-namespace EF\Providers;
+namespace EF\Form\Fields;
 
 use Illuminate\Support\ServiceProvider;
 
