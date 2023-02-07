@@ -24,7 +24,7 @@ class EfServiceProvider extends ServiceProvider
     // {
     //     $this->app->singleton('ef', LiveSelect::class);
     // } 
-    public function boot()
+    public function boot(Dashboard $ds)
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
@@ -33,7 +33,7 @@ class EfServiceProvider extends ServiceProvider
         }
 
         $ds->registerResource('scripts','/js/app.js');
-        $ds->registerResource('stylesheets','/../../public/css/tom-select.default.css');
+        $ds->registerResource('stylesheets','/css/tom-select.default.css');
 
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'ef');
     }
