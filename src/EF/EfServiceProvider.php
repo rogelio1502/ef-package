@@ -14,14 +14,25 @@ class EfServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(Dashboard $ds)
-    {
-        $ds->registerResource('scripts','/js/app.js');
-        $ds->registerResource('stylesheets','/css/tom-select.default.css');
-    }
+    // public function boot(Dashboard $ds)
+    // {
+    //     $ds->registerResource('scripts','/js/app.js');
+    //     $ds->registerResource('stylesheets','/css/tom-select.default.css');
+    // }
 
-    public function register()
+    // public function register()
+    // {
+    //     $this->app->singleton('ef', LiveSelect::class);
+    // } 
+    public function boot()
     {
-        $this->app->singleton('ef', LiveSelect::class);
-    } 
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../resources/views' => base_path('resources/views/vendor/rogelio1502/ef-package'),
+            ], 'views');
+        }
+
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'rogelio1502/ef-package');
+    }
+    
 }
