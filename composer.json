@@ -17,7 +17,7 @@
   "autoload": {
     "psr-4": {
       "EF\\": "src/EF/Components/Form/Fields/",
-      "EF\\Providers": "src/EF/Providers/"
+      "EF\\Providers\\": "src/EF/Providers/"
     }
   },
   "extra": {
