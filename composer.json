@@ -16,7 +16,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "EF\\": "src/EF/",
+      "EF\\Components\\": "src/EF/Components/",
       "EF\\Providers\\": "src/EF/Providers/"
     }
   },
