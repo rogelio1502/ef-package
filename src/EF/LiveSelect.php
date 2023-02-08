@@ -24,7 +24,6 @@ class LiveSelect extends Field
 
     ];
 
-
     public function getProperties(){
         return $this->properties;
     }
