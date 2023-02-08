@@ -16,6 +16,4 @@
 
 
     </div>
-    <p>a</p>
-
 @endcomponent
