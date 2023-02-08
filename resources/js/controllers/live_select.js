@@ -1,6 +1,7 @@
 import TomSelect from 'tom-select'
 export default class extends window.Controller {
   connect () {
+    console.log('Hola mundo')
     const select = this.element.querySelector('select')
 
     let dataset = select.dataset
