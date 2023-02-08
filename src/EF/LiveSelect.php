@@ -1,13 +1,12 @@
 <?php
 
-namespace EF\Components;
+namespace EF;
 use Orchid\Screen\Field;
 use Orchid\Screen\Concerns\ComplexFieldConcern;
 
 class LiveSelect extends Field
 {
-    //
-    
+   
     protected $attributes = [
         'class'        => 'form-control',
         'allowEmpty'   => '',
