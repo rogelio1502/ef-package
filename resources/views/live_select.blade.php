@@ -16,5 +16,4 @@
 
 
     </div>
-    <p>Hola</p>
 @endcomponent
